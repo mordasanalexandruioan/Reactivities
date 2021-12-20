@@ -21,9 +21,9 @@ const[activities, setActivities]=useState([]);
         <img src={logo} className="App-logo" alt="logo" />
         <ul>
           {activities.map((activity: any)=>{
-            <li key={activity.id}>
+            return (<li key={activity.id}>
               {activity.title}
-            </li>
+            </li>)
           })}
         </ul>
       </header>
